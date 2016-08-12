@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStartupLocation="CenterScreen" Height="450" Width="700" BorderThickness="20" AllowsTransparency="True" WindowStyle="None">
+        Title="Hello, CleanWorld" WindowStartupLocation="CenterScreen" Height="450" Width="700" BorderThickness="20" AllowsTransparency="True" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="玄苑.png" Stretch="UniformToFill"/>
     </Window.Background>
@@ -22,7 +22,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Border HorizontalAlignment="Stretch" VerticalAlignment="Top" MouseDown="Window_move">
-            <TextBlock HorizontalAlignment="Center" FontSize="15" VerticalAlignment="Top" Margin="0,5,10,0">Hello!Clean world!</TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontSize="15" VerticalAlignment="Top" Margin="0,5,10,0">Hello, CleanWorld</TextBlock>
         </Border>
         <Button x:Name="buttonSettings" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="50" Style="{StaticResource DefaultButton}" Margin="0,0,100,10">
             &#xE713;
