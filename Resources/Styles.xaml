@@ -84,6 +84,9 @@
     <Style x:Key="DefaultButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource SimpleButtonFocusVisual}"/>
         <Setter Property="Background" Value="#7F000000"/>
+        <Setter Property="FontFamily" Value="/WpfApplication1;component/Resources/#Segoe MDL2 Assets"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -118,7 +121,47 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+    <Style x:Key="SubmitButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource SimpleButtonFocusVisual}"/>
+        <Setter Property="Background" Value="#FF0097FF"/>
+        <Setter Property="FontFamily" Value="/WpfApplication1;component/Resources/#Segoe MDL2 Assets"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <!-- We use Grid as a root because it is easy to add more elements to customize the button -->
+                    <Grid x:Name="Grid">
+                        <Border x:Name="Border" Background="#FF0097FF" BorderThickness="0"/>
+
+                        <!-- Content Presenter is where the text content etc is placed by the control -->
+                        <!-- The bindings are useful so that the control can be parameterized without editing the template -->
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+                    </Grid>
+
+                    <!--Each state sets a brush on the Border in the template -->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocused" Value="true">
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" Value="#FF1BA2FF" TargetName="Border"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Background" Value="#FF0087E4" TargetName="Border"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="true"/>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <Style x:Key="RadioButtonFocusVisual">
         <Setter Property="Control.Template">
             <Setter.Value>

@@ -24,5 +24,13 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+
+        private void Window_move(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
     }
 }
