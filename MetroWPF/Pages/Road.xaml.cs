@@ -13,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApplication1
+namespace MetroWPF.Pages
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// Road.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Road : Page
     {
-        public MainWindow()
+        public Road()
         {
             InitializeComponent();
-        }
-
-        private void Window_move(object sender, MouseButtonEventArgs e)
-        {
-            if (e.LeftButton == MouseButtonState.Pressed)
-            {
-                DragMove();
-            }
         }
     }
 }

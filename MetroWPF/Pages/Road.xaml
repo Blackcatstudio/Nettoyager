@@ -1,0 +1,65 @@
+﻿<Page x:Class="MetroWPF.Pages.Road"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MetroWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="499" d:DesignWidth="842"
+      Title="Road">
+
+    <Grid Background="#FF818181" Opacity="0.75">
+        <Path Width="400" Height="330" Canvas.Left="21" Canvas.Top="24" Stretch="Fill" Fill="#CC119EDA" Data="F1 M 21,30.0001L 55.9999,30.0001L 55.9999,50L 21,50L 21,30.0001 Z M 52,28L 37,28C 38,25 39.4999,24.0001 39.4999,24.0001L 50.75,24C 51.3023,24 52,24.6977 52,25.25L 52,28 Z " Margin="432,159,10,10" Opacity="0.5"/>
+        <Button x:Name="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Style="{DynamicResource MetroCircleButtonStyle}" Height="50">
+            <Path Width="30" Height="20" Stretch="Fill" Fill="#FF000000" Data="F1 M 57,42L 57,34L 32.25,34L 42.25,24L 31.75,24L 17.75,38L 31.75,52L 42.25,52L 32.25,42L 57,42 Z "/>
+        </Button>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="65,14,0,0" TextWrapping="Wrap" Text="准备扫描" VerticalAlignment="Top" FontSize="32"/>
+        <Grid HorizontalAlignment="Left" Height="66" Margin="10,65,0,0" VerticalAlignment="Top" Width="75" Background="#CC119EDA" Opacity="0.75">
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="客户端" VerticalAlignment="Top" FontSize="20" Foreground="White" Margin="7,7,0,0"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="7,27,0,0" TextWrapping="Wrap" Text="路径" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+        </Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="66" Margin="90,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" FontSize="45" Opacity="0.75"/>
+        <Button x:Name="Road" HorizontalAlignment="Left" Margin="767,65,0,0" VerticalAlignment="Top" Width="65" Style="{StaticResource AccentedSquareButtonStyle}" Height="66" Opacity="0.75">
+            <Path Width="45" Height="35" Stretch="Fill" Fill="White" Data="F1 M 19,50L 28,34L 63,34L 54,50L 19,50 Z M 19,28.0001L 35,28C 36,25 37.4999,24.0001 37.4999,24.0001L 48.75,24C 49.3023,24 50,24.6977 50,25.25L 50,28L 53.9999,28.0001L 53.9999,32L 27,32L 19,46.4L 19,28.0001 Z "/>
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="66" Margin="10,136,0,0" VerticalAlignment="Top" Width="66" Background="#CC119EDA" Opacity="0.75">
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="扫描" VerticalAlignment="Top" FontSize="20" Foreground="White" Margin="8,7,0,0"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="6,28,0,0" TextWrapping="Wrap" Text="模式" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+        </Grid>
+        <RadioButton x:Name="radioButton" Content="安全清理" HorizontalAlignment="Left" Margin="81,137,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="radioButton1" Content="深度清理" HorizontalAlignment="Left" Margin="81,160,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton2" Content="自定义清理" HorizontalAlignment="Left" Margin="81,183,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="266" Margin="10,223,0,0" VerticalAlignment="Top" Width="417" Background="#CC76DA11" Opacity="0.5">
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="223,198,0,0" TextWrapping="Wrap" Text="安全清理" VerticalAlignment="Top" FontSize="46" Foreground="White"/>
+            <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="清理后不影响正常玩耍,这种模式不会为您的整合包节约很多内存.(推荐玩家使用)" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+            <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="235,165,0,0" TextWrapping="Wrap" Text="Safe" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="266" Margin="10,494,0,-261" VerticalAlignment="Top" Width="417" Background="#CC119EDA" Opacity="0.5">
+            <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="223,198,0,0" TextWrapping="Wrap" Text="深度清理" VerticalAlignment="Top" FontSize="46" Foreground="White"/>
+            <TextBlock x:Name="textBlock8_Copy" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="清理后将成为第一次启动,这种模式会为您的整合包节省很多内存.(推荐腐竹使用)" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+            <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="223,157,0,0" TextWrapping="Wrap" Text="Deep" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="266" Margin="10,765,0,-532" VerticalAlignment="Top" Width="417" Background="#CCDADA11" Opacity="0.5">
+            <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="177,198,0,0" TextWrapping="Wrap" Text="自定义清理" VerticalAlignment="Top" FontSize="46" Foreground="White"/>
+            <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="自己选择需删除的文件,我们都已注解用途.(推荐整合包作者使用)" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+            <TextBlock x:Name="textBlock12" HorizontalAlignment="Left" Margin="179,164,0,0" TextWrapping="Wrap" Text="Custom" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="66" Margin="766,136,0,0" VerticalAlignment="Top" Width="66" Background="#CC119EDA" Opacity="0.75">
+            <TextBlock x:Name="textBlock13" HorizontalAlignment="Left" TextWrapping="Wrap" Text="更多" VerticalAlignment="Top" FontSize="20" Foreground="White" Margin="7,6,0,0"/>
+            <TextBlock x:Name="textBlock14" HorizontalAlignment="Left" Margin="7,26,0,0" TextWrapping="Wrap" Text="选项" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+        </Grid>
+        <TextBlock x:Name="textBlock15" HorizontalAlignment="Left" Margin="579,207,0,0" TextWrapping="Wrap" Text="您的客户端是否版本分离?" VerticalAlignment="Top" FontSize="22" Opacity="0.75"/>
+        <RadioButton x:Name="radioButton3" Content="否" HorizontalAlignment="Left" Margin="741,235,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton4" Content="是" HorizontalAlignment="Left" Margin="663,235,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock15_Copy" HorizontalAlignment="Left" Margin="563,258,0,0" TextWrapping="Wrap" Text="更多选项?提建议给我们吧~" VerticalAlignment="Top" FontSize="22" Opacity="0.75"/>
+        <Button x:Name="Back_Copy" HorizontalAlignment="Left" Margin="782,291,0,0" VerticalAlignment="Top" Width="50" Style="{DynamicResource MetroCircleButtonStyle}" Height="50">
+            <Path Width="30" Height="20" Stretch="Fill" Fill="#FF000000" Data="F1 M 19.0002,34L 19.0002,42L 43.7502,42L 33.7502,52L 44.2502,52L 58.2502,38L 44.2502,24L 33.7502,24L 43.7502,34L 19.0002,34 Z "/>
+        </Button>
+        <TextBlock x:Name="textBlock15_Copy" HorizontalAlignment="Left" Margin="657,313,0,0" TextWrapping="Wrap" Text="反馈 &amp; 建议" VerticalAlignment="Top" FontSize="22" Opacity="0.75"/>
+        <TextBlock x:Name="textBlock15_Copy1" HorizontalAlignment="Left" Margin="697,291,0,0" TextWrapping="Wrap" Text="快速切换" VerticalAlignment="Top" FontSize="20" Opacity="0.75"/>
+        <Button x:Name="Back_Copy" HorizontalAlignment="Left" Margin="782,10,0,0" VerticalAlignment="Top" Width="50" Style="{DynamicResource MetroCircleButtonStyle}" Height="50">
+            <Path Width="30" Height="20" Stretch="Fill" Fill="#FF000000" Data="F1 M 19.0002,34L 19.0002,42L 43.7502,42L 33.7502,52L 44.2502,52L 58.2502,38L 44.2502,24L 33.7502,24L 43.7502,34L 19.0002,34 Z "/>
+        </Button>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="649,14,0,0" TextWrapping="Wrap" Text="开始扫描" VerticalAlignment="Top" FontSize="32"/>
+    </Grid>
+</Page>
