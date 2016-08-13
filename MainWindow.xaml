@@ -1,0 +1,38 @@
+﻿
+    <Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Hello, CleanWorld" WindowStartupLocation="CenterScreen" Height="450" Width="700" BorderThickness="20" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="玄苑.png" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Window.Effect>
+        <DropShadowEffect ShadowDepth="0" BlurRadius="20" Opacity="0.5"/>
+    </Window.Effect>
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#66000000" Offset="0.008"/>
+                <GradientStop Offset="0.151"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border HorizontalAlignment="Stretch" VerticalAlignment="Top" MouseDown="Window_move">
+            <TextBlock HorizontalAlignment="Center" FontSize="15" VerticalAlignment="Top" Margin="0,5,10,0">Hello, CleanWorld</TextBlock>
+        </Border>
+        <Button x:Name="buttonSettings" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="50" Style="{StaticResource DefaultButton}" Margin="0,0,100,10">
+            &#xE713;
+        </Button>
+        <Button x:Name="buttonScan" HorizontalAlignment="Right" Height="50" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="90" Style="{StaticResource SubmitButton}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock><Run Text="&#xEA99;"/></TextBlock>
+                <TextBlock><Run FontFamily="微软雅黑" Text="清理" FontSize="14.667"/></TextBlock>
+            </StackPanel>
+        </Button>
+        
+    </Grid>
+</Window>
