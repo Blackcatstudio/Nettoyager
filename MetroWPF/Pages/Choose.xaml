@@ -1,4 +1,4 @@
-﻿<Page x:Class="MetroWPF.Pages.Chooes"
+﻿<Page x:Class="MetroWPF.Pages.Choose"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MetroWPF.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="499" d:DesignWidth="842"
-      Title="Chooes">
+      Title="Choose">
 
     <Grid Background="#FF818181" Opacity="0.75">
         

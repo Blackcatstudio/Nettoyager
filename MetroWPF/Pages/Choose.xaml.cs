@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MetroWPF.Pages
 {
     /// <summary>
-    /// Chooes.xaml 的交互逻辑
+    /// Choose.xaml 的交互逻辑
     /// </summary>
-    public partial class Chooes : Page
+    public partial class Choose : Page
     {
-        public Chooes()
+        public Choose()
         {
             InitializeComponent();
         }
