@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using static System.Windows.Navigation.NavigationService;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using MahApps.Metro.Controls;
@@ -24,9 +25,17 @@ namespace MetroWPF
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        Uri uriMainFrm = new Uri("/Pages/MainFrm.xaml",UriKind.Relative);
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+            NavigationService frameNavServ = GetNavigationService(this.frame);
+
+            //frameNavServ.Navigate(uriMainFrm);
+            this.frame.Content = new MainFrm();
         }
 
         private void Start(object sender, RoutedEventArgs e)

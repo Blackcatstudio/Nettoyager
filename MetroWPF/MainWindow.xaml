@@ -3,35 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         GlowBrush="{DynamicResource AccentColorBrush}" ShowMaxRestoreButton="False"
-        Title="Nettoyager - 数据清理者- 2.0新UI,新语言" Height="480" Width="850" Icon="Photos/Hcw图标.ico">
-    
-    <controls:MetroWindow.Background>
+        Title="Nettoyager - 数据清理者- 2.0新UI,新语言" Height="480" Width="839" Icon="Photos/Hcw图标.ico">
+
+    <!--controls:MetroWindow.Background>
         <ImageBrush ImageSource="Photos/玄苑.png"/>
-    </controls:MetroWindow.Background>
+    </!-->
     <controls:MetroWindow.Flyouts>
         <controls:FlyoutsControl>
         </controls:FlyoutsControl>
     </controls:MetroWindow.Flyouts>
+    <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="449" VerticalAlignment="Top" Width="838"/>
 
-    <Grid>
-        <controls:Tile Title="开始清理" 
-                    TiltFactor="2"
-                    Width="210" Height="100" 
-                    Count="" Margin="622,339,10,10" Background="#CC119EDA" Opacity="0.75" Click="Start">
-            <Path Width="40" Height="40" Stretch="Fill" Fill="White" Data="F1 M 58.5833,45.9167L 58.5833,57L 19,57L 19,45.9167L 28.8998,45.9167C 31.0306,47.2793 33.6795,48.4476 36.6434,49.2418C 40.3467,50.2341 44.7079,50.4746 47.6249,50.0692L 47.6249,45.9167L 58.5833,45.9167 Z M 56.2083,48.2917L 53.4374,48.2917L 53.4374,53.0417L 56.2082,53.0417L 56.2083,48.2917 Z M 45.7433,48.2824C 43.1578,48.6418 39.9938,48.0327 36.7113,47.1532C 31.1866,45.6728 26.8965,42.7258 25.5163,39.7952L 32.2902,33.0213L 45.7433,38.0663L 45.7433,48.2824 Z M 39.2905,28.1719C 39.6351,28.1719 39.9737,28.1941 40.3047,28.2368L 46.0048,17.0498L 49.0712,18.6122L 43.5443,29.4594C 45.1454,30.5622 46.1735,32.2733 46.1735,34.1946C 46.1735,35.0197 45.9839,35.806 45.6407,36.5221L 33.4151,31.7762C 34.4796,29.6541 36.4722,28.1719 39.2905,28.1719 Z "/>
-        </controls:Tile>
-        <controls:Tile Title="设置" 
-                    TiltFactor="2"
-                    Width="100" Height="100" 
-                    Count="" Margin="517,339,225,10" Opacity="0.75" Background="#CC119EDA">
-            <Path Width="40" Height="40" Stretch="Fill" Fill="White" Data="F1 M 27.5314,21.8628L 33.0126,19.4224L 34.7616,23.3507C 36.6693,22.9269 38.6044,22.8903 40.4668,23.2026L 42.0083,19.1868L 47.6098,21.337L 46.0683,25.3528C 47.6612,26.3669 49.0747,27.6889 50.2088,29.2803L 54.1371,27.5313L 56.5776,33.0126L 52.6493,34.7616C 53.0731,36.6693 53.1097,38.6043 52.7974,40.4668L 56.8131,42.0083L 54.6629,47.6097L 50.6472,46.0683C 49.6331,47.6613 48.3111,49.0748 46.7197,50.2089L 48.4686,54.1372L 42.9874,56.5776L 41.2384,52.6493C 39.3307,53.0731 37.3957,53.1097 35.5333,52.7974L 33.9918,56.8131L 28.3903,54.6629L 29.9318,50.6472C 28.3388,49.6331 26.9252,48.3111 25.7911,46.7196L 21.8628,48.4686L 19.4224,42.9873L 23.3507,41.2383C 22.9269,39.3307 22.8903,37.3957 23.2026,35.5332L 19.1869,33.9918L 21.3371,28.3903L 25.3528,29.9318C 26.3669,28.3388 27.6889,26.9252 29.2804,25.7911L 27.5314,21.8628 Z M 34.3394,29.7781C 29.7985,31.7998 27.7564,37.1198 29.7781,41.6606C 31.7998,46.2015 37.1198,48.2436 41.6606,46.2219C 46.2015,44.2002 48.2436,38.8802 46.2219,34.3394C 44.2002,29.7985 38.8802,27.7564 34.3394,29.7781 Z "/>
-        </controls:Tile>
-        <controls:Tile Title="主题" 
-            TiltFactor="2"
-            Width="100" Height="100" 
-            Count="" Margin="412,339,330,10" Opacity="0.75" Background="#CC119EDA">
-            <Path Width="45" Height="35" Stretch="Fill" Fill="White" Data="F1 M 50.6667,34.0417L 50.6667,55.4167L 25.3333,55.4167L 25.3333,34.0417L 20.5833,37.2083L 15.8333,32.4583L 25.3333,22.9583L 31.6667,21.375C 31.6667,23.9984 34.5022,26.125 38,26.125C 41.4978,26.125 44.3333,23.9984 44.3333,21.375L 50.6667,22.9583L 60.1667,32.4583L 55.4167,37.2083L 50.6667,34.0417 Z "/>
-        </controls:Tile>
-        
-    </Grid>
+
 </controls:MetroWindow>
