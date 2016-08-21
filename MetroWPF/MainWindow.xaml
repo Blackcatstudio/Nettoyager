@@ -4,6 +4,7 @@
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         GlowBrush="{DynamicResource AccentColorBrush}" ShowMaxRestoreButton="False"
         Title="Nettoyager - 数据清理者- 2.0新UI,新语言" Height="480" Width="850" Icon="Photos/Hcw图标.ico">
+    
     <controls:MetroWindow.Background>
         <ImageBrush ImageSource="Photos/玄苑.png"/>
     </controls:MetroWindow.Background>
@@ -31,5 +32,6 @@
             Count="" Margin="412,339,330,10" Opacity="0.75" Background="#CC119EDA">
             <Path Width="45" Height="35" Stretch="Fill" Fill="White" Data="F1 M 50.6667,34.0417L 50.6667,55.4167L 25.3333,55.4167L 25.3333,34.0417L 20.5833,37.2083L 15.8333,32.4583L 25.3333,22.9583L 31.6667,21.375C 31.6667,23.9984 34.5022,26.125 38,26.125C 41.4978,26.125 44.3333,23.9984 44.3333,21.375L 50.6667,22.9583L 60.1667,32.4583L 55.4167,37.2083L 50.6667,34.0417 Z "/>
         </controls:Tile>
+        
     </Grid>
 </controls:MetroWindow>
