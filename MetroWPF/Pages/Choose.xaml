@@ -8,7 +8,7 @@
       d:DesignHeight="499" d:DesignWidth="842"
       Title="Choose">
 
-    <Grid Background="#FF818181" Opacity="0.75">
+    <Grid x:Name="pgChooseToDelete" Background="#FF818181" Opacity="0.75">
         
         <!-- 背景Path -->
 

@@ -8,7 +8,7 @@
       d:DesignHeight="499" d:DesignWidth="842"
       Title="Road">
 
-    <Grid Background="#FF818181" Opacity="0.75">
+    <Grid x:Name="pgScanPrepare" Background="#FF818181" Opacity="0.75">
 
         <!-- 背景Path -->
 

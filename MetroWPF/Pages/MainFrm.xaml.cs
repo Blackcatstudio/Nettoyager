@@ -10,9 +10,13 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using static System.Windows.Navigation.NavigationService;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using MahApps.Metro.Controls;
+using MahApps.Metro;
+using MahApps.Metro.Controls.Dialogs;
 namespace MetroWPF
 {
     /// <summary>
@@ -27,7 +31,7 @@ namespace MetroWPF
 
         private void Tile_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.NavigationService.Navigate(new MainFrm());
         }
     }
 }
