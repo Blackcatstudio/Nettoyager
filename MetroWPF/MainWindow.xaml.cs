@@ -25,6 +25,11 @@ namespace MetroWPF
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        /* 编码提醒 
+           Frame的Navigate控制并不需要如此复杂的定义方式
+           只需要一行代码即可解决
+           请负责人注意
+             */
         Uri uriMainFrm = new Uri("/Pages/MainFrm.xaml",UriKind.Relative);
 
 
@@ -40,6 +45,7 @@ namespace MetroWPF
 
         private void Start(object sender, RoutedEventArgs e)
         {
+            /* ERIC对这句表示强烈吐槽 */
             this.ShowMessageAsync("无反应", "因为现在的Nettoyager只有UI");
         }
     }
