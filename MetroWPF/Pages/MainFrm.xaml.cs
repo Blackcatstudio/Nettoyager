@@ -25,5 +25,9 @@ namespace MetroWPF
             InitializeComponent();
         }
 
+        private void Tile_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
