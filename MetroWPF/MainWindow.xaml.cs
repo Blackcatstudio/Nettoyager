@@ -23,30 +23,26 @@ namespace MetroWPF
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class MainWindow : NavigationWindow
     {
         /* 编码提醒 
            Frame的Navigate控制并不需要如此复杂的定义方式
            只需要一行代码即可解决
            请负责人注意
              */
-        Uri uriMainFrm = new Uri("/Pages/MainFrm.xaml",UriKind.Relative);
-
+        /* 已经改掉了 --2016/8/22 RL */
 
         public MainWindow()
         {
             InitializeComponent();
-
-            NavigationService frameNavServ = GetNavigationService(this.frame);
-
-            //frameNavServ.Navigate(uriMainFrm);
-            this.frame.Content = new MainFrm();
+            GetNavigationService(this).Navigate(new MainFrm());
         }
 
-        private void Start(object sender, RoutedEventArgs e)
+        /*private void Start(object sender, RoutedEventArgs e)
         {
-            /* ERIC对这句表示强烈吐槽 */
-            this.ShowMessageAsync("无反应", "因为现在的Nettoyager只有UI");
-        }
+             ERIC对这句表示强烈吐槽 
+        //this.ShowMessageAsync("无反应", "因为现在的Nettoyager只有UI");  注释了不就可以了，
+                                                                       反正这是个废函数 --RL
+        }*/
     }
 }
