@@ -8,7 +8,7 @@ THIS PROJECT IS USING A NUGET PACKAGE CALLED MahApps.Metro. VER. 1.2.4.0.
 <br/>本项目正在使用名为MahApps.Metro的NUGET包。版本是1.2.4.0。
 
 >WE ARE GNU GPL v3!
-<br/>我们遵循GNU GPL v3协议（详见License片段）
+<br/>此代码遵循GNU GPL v3协议（详见License片段）。发行版本的协议尚未确定。
 
 ##进展
 * UI主体完成
@@ -17,7 +17,7 @@ THIS PROJECT IS USING A NUGET PACKAGE CALLED MahApps.Metro. VER. 1.2.4.0.
 * Eric_Stevens （Github: <a href="https://github.com/CodingEric">@CodingEric</a>）
 * RL （Github: <a href="https://github.com/Desgging">@Desgging</a>）
 
-##协议
+##代码协议
 ```
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
