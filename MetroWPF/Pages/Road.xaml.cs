@@ -43,5 +43,22 @@ namespace MetroWPF.Pages
                 }
             }
         }
+
+        private void FastGo_Click(object sender, RoutedEventArgs e)
+        {
+            Page cleanMode;
+            bool isDeep = false;
+            if ((bool)radioSafe.IsChecked) {
+                cleanMode = new Pages.Delete();
+                isDeep = false;
+            } else if ((bool)radioDeep.IsChecked) {
+                cleanMode = new Pages.Delete();
+                isDeep = true;
+            }
+            else
+                cleanMode = new Pages.Choose();
+
+            this.NavigationService.Navigate(new Pages.Scanning(cleanMode,isDeep));
+        }
     }
 }

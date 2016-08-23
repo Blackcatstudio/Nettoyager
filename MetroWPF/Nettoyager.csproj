@@ -82,6 +82,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cleanMethod.cs" />
     <Compile Include="Pages\MainFrm.xaml.cs">
       <DependentUpon>MainFrm.xaml</DependentUpon>
     </Compile>

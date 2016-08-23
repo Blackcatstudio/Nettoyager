@@ -8,11 +8,12 @@
       d:DesignHeight="499" d:DesignWidth="842"
       Title="Road">
 
-    <Grid x:Name="pgScanPrepare" Background="#FF818181" Opacity="0.75">
+    <Grid x:Name="pgScanPrepare">
+        <Grid.BindingGroup>
+            <BindingGroup/>
+        </Grid.BindingGroup>
 
         <!-- 背景Path -->
-
-        <Path Width="400" Height="330" Canvas.Left="21" Canvas.Top="24" Stretch="Fill" Fill="#CC119EDA" Data="F1 M 21,30.0001L 55.9999,30.0001L 55.9999,50L 21,50L 21,30.0001 Z M 52,28L 37,28C 38,25 39.4999,24.0001 39.4999,24.0001L 50.75,24C 51.3023,24 52,24.6977 52,25.25L 52,28 Z " Margin="432,159,10,10" Opacity="0.5"/>
 
         <!-- 头部格式 -->
 
@@ -48,7 +49,7 @@
 
         <!-- 模式介绍 -->
 
-        <Grid HorizontalAlignment="Left" Height="266" Margin="10,223,0,0" VerticalAlignment="Top" Width="417" Background="#CC76DA11" Opacity="0.5">
+        <Grid HorizontalAlignment="Left" Height="266" Margin="10,223,0,0" VerticalAlignment="Top" Width="417" Background="#CC76DA11" Opacity="0.75">
             <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="223,198,0,0" TextWrapping="Wrap" Text="安全清理" VerticalAlignment="Top" FontSize="46" Foreground="White"/>
             <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="清理后不影响正常玩耍,这种模式不会为您的整合包节约很多内存.(推荐玩家使用)" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
             <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="235,165,0,0" TextWrapping="Wrap" Text="Safe" VerticalAlignment="Top" FontSize="36" Foreground="White"/>
@@ -68,26 +69,7 @@
 
         <!-- 更多选项 -->
 
-        <Grid HorizontalAlignment="Left" Height="66" Margin="766,136,0,0" VerticalAlignment="Top" Width="66" Background="#CC119EDA" Opacity="0.75">
-            <TextBlock x:Name="textBlock13" HorizontalAlignment="Left" TextWrapping="Wrap" Text="更多" VerticalAlignment="Top" FontSize="20" Foreground="White" Margin="7,6,0,0"/>
-            <TextBlock x:Name="textBlock14" HorizontalAlignment="Left" Margin="7,26,0,0" TextWrapping="Wrap" Text="选项" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
-        </Grid>
-
-        <TextBlock x:Name="textBlock15" HorizontalAlignment="Left" Margin="579,207,0,0" TextWrapping="Wrap" Text="您的客户端是否版本分离?" VerticalAlignment="Top" FontSize="22" Opacity="0.75"/>
-
-        <RadioButton x:Name="radioButton3" Content="否" HorizontalAlignment="Left" Margin="741,235,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton4" Content="是" HorizontalAlignment="Left" Margin="663,235,0,0" VerticalAlignment="Top"/>
-
         <!-- 提建议-快速跳转 -->
-
-        <TextBlock x:Name="textBlock15_Copy" HorizontalAlignment="Left" Margin="563,258,0,0" TextWrapping="Wrap" Text="更多选项?提建议给我们吧~" VerticalAlignment="Top" FontSize="22" Opacity="0.75"/>
-
-        <Button x:Name="Back_Copy" HorizontalAlignment="Left" Margin="782,291,0,0" VerticalAlignment="Top" Width="50" Style="{DynamicResource MetroCircleButtonStyle}" Height="50" Opacity="0.75">
-            <Path Width="30" Height="20" Stretch="Fill" Fill="#FF000000" Data="F1 M 19.0002,34L 19.0002,42L 43.7502,42L 33.7502,52L 44.2502,52L 58.2502,38L 44.2502,24L 33.7502,24L 43.7502,34L 19.0002,34 Z "/>
-        </Button>
-
-        <TextBlock x:Name="textBlock16" HorizontalAlignment="Left" Margin="657,313,0,0" TextWrapping="Wrap" Text="反馈 &amp; 建议" VerticalAlignment="Top" FontSize="22" Opacity="0.75"/>
-        <TextBlock x:Name="textBlock17" HorizontalAlignment="Left" Margin="697,291,0,0" TextWrapping="Wrap" Text="快速切换" VerticalAlignment="Top" FontSize="20" Opacity="0.75"/>
 
         <!-- 开始扫描 -->
 
@@ -97,5 +79,35 @@
 
         <TextBlock x:Name="textBlock18" HorizontalAlignment="Left" Margin="649,14,0,0" TextWrapping="Wrap" Text="开始扫描" VerticalAlignment="Top" FontSize="32"/>
         <WindowsFormsHost HorizontalAlignment="Left" Height="100" Margin="-521,494,0,-95" VerticalAlignment="Top" Width="100"/>
+
+        <Expander x:Name="expander1" Header="更多选项  " HorizontalAlignment="Left" Height="290" Margin="493,144,0,0" VerticalAlignment="Top" Width="339" Style="{DynamicResource ResourceKey=ExpanderStyleMain}">
+            <Expander.Background>
+                <SolidColorBrush Color="#CC119EDA" Opacity="0.75"/>
+            </Expander.Background>
+            <Grid HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="328" Margin="0,0,-1,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="174*"/>
+                    <ColumnDefinition Width="21*"/>
+                    <ColumnDefinition Width="133*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Background>
+                    <SolidColorBrush Color="#CC119EDA" Opacity="0.75"/>
+                </Grid.Background>
+                <TextBlock x:Name="textBlock15" HorizontalAlignment="Left" Margin="52,24,0,0" TextWrapping="Wrap" Text="您的客户端是否版本分离?" VerticalAlignment="Top" FontSize="22" Opacity="0.75" Foreground="White" Grid.ColumnSpan="3"/>
+
+                <RadioButton x:Name="radioButton3" Content="否" HorizontalAlignment="Left" Margin="36,51,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White" Grid.Column="2"/>
+                <RadioButton x:Name="radioButton4" Content="是" HorizontalAlignment="Left" Margin="152,51,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White" Grid.ColumnSpan="3"/>
+
+                <TextBlock x:Name="textBlock15_Copy" HorizontalAlignment="Left" Margin="52,75,0,0" TextWrapping="Wrap" Text="更多选项?提建议给我们吧~" VerticalAlignment="Top" FontSize="22" Opacity="0.75" Foreground="White" Grid.ColumnSpan="3"/>
+
+                <Button x:Name="Back_Copy" HorizontalAlignment="Left" Margin="60,116,0,0" VerticalAlignment="Top" Width="50" Style="{DynamicResource MetroCircleButtonStyle}" Height="50" Opacity="0.75" Foreground="White" Grid.Column="2">
+                    <Path Width="30" Height="20" Stretch="Fill" Fill="#FF000000" Data="F1 M 19.0002,34L 19.0002,42L 43.7502,42L 33.7502,52L 44.2502,52L 58.2502,38L 44.2502,24L 33.7502,24L 43.7502,34L 19.0002,34 Z "/>
+                </Button>
+
+                <TextBlock x:Name="textBlock16" HorizontalAlignment="Left" Margin="135,138,0,0" TextWrapping="Wrap" Text="反馈 &amp; 建议" VerticalAlignment="Top" FontSize="22" Opacity="0.75" Foreground="White" Grid.ColumnSpan="3"/>
+                <TextBlock x:Name="textBlock17" HorizontalAlignment="Left" Margin="1,108,0,0" TextWrapping="Wrap" Text="快速切换" VerticalAlignment="Top" FontSize="20" Opacity="0.75" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+            </Grid>
+        </Expander>
     </Grid>
+
 </Page>

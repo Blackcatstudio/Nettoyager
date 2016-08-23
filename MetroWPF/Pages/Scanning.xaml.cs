@@ -20,9 +20,19 @@ namespace MetroWPF.Pages
     /// </summary>
     public partial class Scanning : Page
     {
-        public Scanning()
+        Page cleanModePage;
+        bool doesDeepClean;
+        public Scanning(Page cleanMode,bool DeepClean)
         {
             InitializeComponent();
+
+            cleanModePage = cleanMode;//give value
+            doesDeepClean = DeepClean;
+        }
+
+        void completeScan()
+        {
+            safeCleanFiles abc = new safeCleanFiles();
         }
     }
 }

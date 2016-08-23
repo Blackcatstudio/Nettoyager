@@ -30,23 +30,20 @@ namespace MetroWPF
            只需要一行代码即可解决
            请负责人注意
              */
-        Uri uriMainFrm = new Uri("/Pages/MainFrm.xaml",UriKind.Relative);
-
-
+/*我已经改了 --2016/8/22 RL*/
         public MainWindow()
         {
             InitializeComponent();
-
-            NavigationService frameNavServ = GetNavigationService(this.frame);
+            
 
             //frameNavServ.Navigate(uriMainFrm);
-            this.frame.Content = new MainFrm();
+            this.frame.Navigate(new MainFrm());
         }
 
-        private void Start(object sender, RoutedEventArgs e)
+        private void MetroWindow_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            /* ERIC对这句表示强烈吐槽 */
-            this.ShowMessageAsync("无反应", "因为现在的Nettoyager只有UI");
+            frame.Height = this.Height;
+            frame.Width = this.Width;
         }
     }
 }

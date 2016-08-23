@@ -3,7 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         GlowBrush="{DynamicResource AccentColorBrush}" ShowMaxRestoreButton="False"
-        Title="Nettoyager - 数据清理者- 2.0新UI,新语言" Height="480" Width="839" Icon="Photos/Hcw图标.ico">
+        Title="Nettoyager - 数据清理者- 2.0新UI,新语言" Height="499" Width="842" Icon="Photos/Hcw图标.ico" SizeChanged="MetroWindow_SizeChanged">
+    <controls:MetroWindow.Background>
+        <ImageBrush ImageSource="Photos/玄苑.png"/>
+    </controls:MetroWindow.Background>
 
     <!--controls:MetroWindow.Background>
         <ImageBrush ImageSource="Photos/玄苑.png"/>
@@ -12,7 +15,7 @@
         <controls:FlyoutsControl>
         </controls:FlyoutsControl>
     </controls:MetroWindow.Flyouts>
-    <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="449" VerticalAlignment="Top" Width="838"/>
+    <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="449" VerticalAlignment="Top" Width="838" NavigationUIVisibility="Hidden"/>
 
 
 </controls:MetroWindow>
