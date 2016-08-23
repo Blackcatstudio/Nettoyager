@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Nettoyager")]
-[assembly: AssemblyCopyright("Copyright ©  2014 Blackcat Studio")]
+[assembly: AssemblyCopyright("Copyright © 2016 Blackcat Studio")]
 [assembly: AssemblyTrademark("BlCaSt")]
 [assembly: AssemblyCulture("")]
 
