@@ -1,14 +1,14 @@
-# Nettoyager
+# <a href="https://github.com/Blackcatstudio/Nettoyager/">Nettoyager</a>
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/nettoyager/Lobby)&nbsp;&nbsp;&nbsp;&nbsp;[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/)  
 ##简介
-Nettoyager is a program which can help users to make their Minecraft clean.
+`Nettoyager` is a program which can help users to make their Minecraft clean.
 <br/>Nettoyager是一个<b>Minecraft冗余文件清理程序</b>。
 
-THIS PROJECT IS USING A NUGET PACKAGE CALLED MahApps.Metro. VER. 1.2.4.0.
+THIS PROJECT IS USING A NUGET PACKAGE CALLED `MahApps.Metro. VER. 1.2.4.0.`
 <br/>本项目正在使用名为MahApps.Metro的NUGET包。版本是1.2.4.0。
 
 >WE ARE GNU GPL v3!
-<br/>此代码遵循GNU GPL v3协议（详见License片段）。发行版本的协议尚未确定。
+<br/>此代码遵循`GNU GPL v3协议`（详见License片段）。
 
 ##进展
 * UI主体完成
