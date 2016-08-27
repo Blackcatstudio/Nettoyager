@@ -32,7 +32,8 @@ namespace MetroWPF.Pages
 
         void completeScan()
         {
-            safeCleanFiles abc = new safeCleanFiles();
+            this.NavigationService.Navigate(cleanModePage);
+
         }
     }
 }

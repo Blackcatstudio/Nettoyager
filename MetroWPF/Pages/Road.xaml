@@ -43,8 +43,8 @@
             <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="6,28,0,0" TextWrapping="Wrap" Text="模式" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
         </Grid>
 
-        <RadioButton x:Name="radioButton" Content="安全清理" HorizontalAlignment="Left" Margin="81,137,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <RadioButton x:Name="radioButton1" Content="深度清理" HorizontalAlignment="Left" Margin="81,160,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioSafe" Content="安全清理" HorizontalAlignment="Left" Margin="81,137,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="radioDeep" Content="深度清理" HorizontalAlignment="Left" Margin="81,160,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radioButton2" Content="自定义清理" HorizontalAlignment="Left" Margin="81,183,0,0" VerticalAlignment="Top"/>
 
         <!-- 模式介绍 -->
@@ -80,7 +80,7 @@
         <TextBlock x:Name="textBlock18" HorizontalAlignment="Left" Margin="649,14,0,0" TextWrapping="Wrap" Text="开始扫描" VerticalAlignment="Top" FontSize="32"/>
         <WindowsFormsHost HorizontalAlignment="Left" Height="100" Margin="-521,494,0,-95" VerticalAlignment="Top" Width="100"/>
 
-        <Expander x:Name="expander1" Header="更多选项  " HorizontalAlignment="Left" Height="290" Margin="493,144,0,0" VerticalAlignment="Top" Width="339" Style="{DynamicResource ResourceKey=ExpanderStyleMain}">
+        <Expander x:Name="expander1" Header="更多选项  " HorizontalAlignment="Left" Height="290" Margin="493,144,0,0" VerticalAlignment="Top" Width="339">
             <Expander.Background>
                 <SolidColorBrush Color="#CC119EDA" Opacity="0.75"/>
             </Expander.Background>

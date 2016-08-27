@@ -10,8 +10,13 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using static System.Windows.Navigation.NavigationService;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
+using MahApps.Metro.Controls;
+using MahApps.Metro;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace MetroWPF.Pages
 {
@@ -20,7 +25,7 @@ namespace MetroWPF.Pages
     /// </summary>
     public partial class Delete : Page
     {
-        public Delete()
+        public Delete(bool DeepClean,bool custom=false)
         {
             InitializeComponent();
         }

@@ -49,11 +49,11 @@ namespace MetroWPF.Pages
             Page cleanMode;
             bool isDeep = false;
             if ((bool)radioSafe.IsChecked) {
-                cleanMode = new Pages.Delete();
                 isDeep = false;
+                cleanMode = new Pages.Delete(isDeep);
             } else if ((bool)radioDeep.IsChecked) {
-                cleanMode = new Pages.Delete();
                 isDeep = true;
+                cleanMode = new Pages.Delete(isDeep);
             }
             else
                 cleanMode = new Pages.Choose();
