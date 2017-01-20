@@ -20,20 +20,29 @@ namespace MetroWPF.Pages
     /// </summary>
     public partial class Scanning : Page
     {
-        Page cleanModePage;
-        bool doesDeepClean;
-        public Scanning(Page cleanMode,bool DeepClean)
+        public Scanning(int clrMode,string pathOfDotMC)
         {
             InitializeComponent();
+            scanAction(pathOfDotMC);
+        }
 
-            cleanModePage = cleanMode;//give value
-            doesDeepClean = DeepClean;
+        void scanAction(string dotMCPath)
+        {
+            addLogLine("在" + dotMCPath + "中寻找垃圾：");
+
         }
 
         void completeScan()
         {
-            this.NavigationService.Navigate(cleanModePage);
 
+        }
+
+        void addLogLine(string adding, bool newLine = true)
+        {
+            if (newLine)
+                scanLogs.Text += "\n" + adding;
+            else
+                scanLogs.Text += "\n" + adding;
         }
     }
 }

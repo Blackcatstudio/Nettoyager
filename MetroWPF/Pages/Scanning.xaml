@@ -22,9 +22,9 @@
             <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="6,28,0,0" TextWrapping="Wrap" Text="扫描" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
         </Grid>
 
-        <Custom:MetroProgressBar x:Name="scanProgress" Margin="81,10,10,423" Height="66" Opacity="0.75" />
+        <Custom:MetroProgressBar x:Name="scanProgress" Margin="81,-3,22,436" Height="66" Opacity="0.75" />
         
-        <TextBlock x:Name="scanResult" HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="扫描日志" VerticalAlignment="Top" Width="822" Height="408" Background="#FFB0B0B0" Opacity="0.75" FontSize="20"/>
+        <TextBlock x:Name="scanLogs" HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="扫描日志" VerticalAlignment="Top" Width="822" Height="408" Background="#FFB0B0B0" Opacity="0.75" FontSize="20"/>
 
     </Grid>
 </Page>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MetroWPF
 {
 
-    class safeCleanFiles
+    class safeCleanDelete
     {
         //root dir is ".minecraft" folder
         public string _fmlLogs = "\\*.log",
@@ -19,7 +19,7 @@ namespace MetroWPF
                       _NVIDIA = "\\NVIDIA\\";
     }
 
-    class deepCleanFiles
+    class deepCleanKeep
     {
         public string _s_assets = "\\assets\\",
                       _s_libraries = "\\libraries\\",

@@ -46,19 +46,13 @@ namespace MetroWPF.Pages
 
         private void FastGo_Click(object sender, RoutedEventArgs e)
         {
-            Page cleanMode;
-            bool isDeep = false;
-            if ((bool)radioSafe.IsChecked) {
-                isDeep = false;
-                cleanMode = new Pages.Delete(isDeep);
-            } else if ((bool)radioDeep.IsChecked) {
-                isDeep = true;
-                cleanMode = new Pages.Delete(isDeep);
+            int cleanMode = 0;//delare 0 as safe, 1 as deep, others as custom.
+            if ((bool)radioDeep.IsChecked) {
+                cleanMode = 1;
             }
             else
-                cleanMode = new Pages.Choose();
-
-            this.NavigationService.Navigate(new Pages.Scanning(cleanMode,isDeep));
+                cleanMode = 2;
+            this.NavigationService.Navigate(new Pages.Scanning(cleanMode, txtPath.Text));
         }
     }
 }

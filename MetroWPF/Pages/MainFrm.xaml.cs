@@ -29,11 +29,6 @@ namespace MetroWPF
             InitializeComponent();
         }
 
-        private void Tile_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new MainFrm());
-        }
-
         private void tileScan_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Pages.Road());
