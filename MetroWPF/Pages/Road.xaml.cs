@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,13 @@ namespace MetroWPF.Pages
 
         private void FastGo_Click(object sender, RoutedEventArgs e)
         {
+            DirectoryInfo dir = new DirectoryInfo(txtPath.Text);
+            if(!dir.Exists)
+            {
+                System.Windows.Forms.MessageBox.Show("哎呀，这个文件夹不存在哟！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             int cleanMode = 0;//delare 0 as safe, 1 as deep, others as custom.
             if ((bool)radioDeep.IsChecked) {
                 cleanMode = 1;
@@ -53,6 +61,20 @@ namespace MetroWPF.Pages
             else
                 cleanMode = 2;
             this.NavigationService.Navigate(new Pages.Scanning(cleanMode, txtPath.Text));
+        }
+
+        private void txtPath_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtPath.Text.Length < 10)
+            {
+                FastGo.IsEnabled = false;
+                return;
+            }
+            string last = txtPath.Text.Substring(txtPath.Text.Length - 10, 10);
+            if (last == ".minecraft" || last == "minecraft\\")
+                FastGo.IsEnabled = true;
+            else
+                FastGo.IsEnabled = false;
         }
     }
 }
